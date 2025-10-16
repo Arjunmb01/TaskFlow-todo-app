@@ -189,4 +189,5 @@ Check the issues page
 
 Create a new issue if your problem isn't already covered
 
-Contact us at [your-email@example.com]
+Contact us at arjunmb1176@gmail.com
+
