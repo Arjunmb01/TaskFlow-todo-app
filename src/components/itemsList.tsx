@@ -1,5 +1,4 @@
-// itemsList.tsx
-import React from "react";
+
 import { Button } from "./button";
 import type { Items, ReactSetState } from "../../types/utlis";
 
