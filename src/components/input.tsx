@@ -1,4 +1,4 @@
-// input.tsx
+
 import React from "react"
 
 type Input = {
@@ -10,7 +10,7 @@ type Input = {
 
 export const Input = ({ inputValue, setInputValue, placeholder = "Add a new task..." }: Input) => {
     return (
-        <div className="relative mb-4">
+        <div className="relative mb-7">
             <input 
                 type="text" 
                 className="w-full p-4 rounded-xl bg-gray-800 border-2 border-gray-700 text-white placeholder-gray-400 

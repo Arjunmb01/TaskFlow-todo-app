@@ -1,4 +1,4 @@
-// button.tsx
+
 import type { JSX } from "react";
 
 type Button = {

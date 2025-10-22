@@ -1,4 +1,4 @@
-// App.tsx
+
 import React, { useState } from 'react';
 import './App.css'
 import ImageHeader from './components/imageheader';
@@ -14,15 +14,10 @@ function App() {
    const handleSummit = (event: React.FormEvent) => {
       event.preventDefault();
 
-      if (inputValue.trim() === "") {
-         alert("Please enter a task before adding");
-         return;
-      }
-
-      setItems((prev) => [...prev, { 
-         title: inputValue, 
-         id: Date.now().toString(), 
-         completed: false 
+      setItems((prev) => [...prev, {
+         title: inputValue,
+         id: Date.now().toString(),
+         completed: false
       }]);
       setInputValue("");
    };
@@ -31,11 +26,10 @@ function App() {
    const totalCount = items.length;
 
    return (
-      <div className='min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 to-gray-800 p-4'>
+      <div className='min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 to-gray-800 p-5'>
          <div className='max-w-md w-full'>
             <ImageHeader />
-            
-            {/* Stats */}
+
             {items.length > 0 && (
                <div className="flex justify-between items-center mb-6 p-4 bg-gray-800 rounded-xl shadow-lg">
                   <div className="text-center">
@@ -65,18 +59,17 @@ function App() {
                      </span>
                   </Button>
                </form>
-               
-               <div className={`max-h-96 overflow-y-auto custom-scrollbar ${
-                  items.length > 0 ? 'pr-2' : ''
-               }`}>
+
+               <div className={`max-h-96 overflow-y-auto custom-scrollbar ${items.length > 0 ? 'pr-2' : ''
+                  }`}>
                   <ItemList items={items} setItems={setItems} />
                </div>
             </div>
-            
-            {/* Footer */}
+
+
             <div className="text-center mt-8 text-gray-500 text-sm">
-               {items.length === 0 
-                  ? "Start by adding your first task above!" 
+               {items.length === 0
+                  ? "Start by adding your first task above!"
                   : "Keep going! You're doing great!"}
             </div>
          </div>

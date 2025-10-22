@@ -1,4 +1,4 @@
-// imageheader.tsx (Ultra Compact)
+
 const ImageHeader = () => {
   return (
     <div className="flex flex-col items-center mb-4">
